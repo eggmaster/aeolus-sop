@@ -13,55 +13,53 @@ This SOP focuses on the Aeolus / CloudForms development process. It
 describes the schedule and process to make tags, create rpms, tarballs,
 and update our upstream release documentation.
 
-# Schedule
+# Sprint Template
 
-Each sprint will have several key days. Sprints begin and end on Thursdays and are three weeks in length (although the following calendar shows days falling in each of four weeks for readability, the Sprint is three weeks long).
+Overarching ideas:  
 
--   Tail of Week 3
+- Developers should work together to close out issues as soon as possible within the sprint rather than waiting until the last possible minute.  Think steady stream of patches.
 
-    -   Friday - All user stories proposed as github Issues
-    -   Friday - Issue grooming in preparation for Monday Planning Poker
-    -   Friday - All bugfix commits backported to EOS release branch, final release tag
-    -   Friday - Release Documentation prepped and staged
+- Quality checks should be part of accepting the pull request -- make sure you understand the test plan for your issues
 
--   Week 1
+- Build in time to plan for upcoming sprints
 
-    -   Monday - Sprint planning meeting, Planning Poker, create new Sprint Milestone
-    -   Monday - Release Docs reviewed/approved
-    -   Monday - End of Sprint Release Announcement posted and emailed
-    -   Monday - Previous Sprint demo recording made public
-    -   Wednesday - Proposed test cases created for Issues in current Milestone
-    -   Friday - User story backlog grooming and prioritization round one
+- Emphasize continuous integration testing
 
--   Week 2
+Sprint is 15 work days 
 
-    -   Monday - Developers update status of open issues
-    -   Tuesday - User story backlog grooming and triage
-    -   Tuesday - All issues must have corresponding pull request
-    -   Wednesday - Open issues must have a reviewer assigned
-    -   Thursday - Close of business, End of Sprint tag created in github
-    -   Thursday - From this point no new commits land on Sprint tag without manager approval
-    -   Thursday - All open issues updated to reflect correct current state
-    -   Thursday - Tagged repos handed off to QE for testing
+- Day 1 (Wed)
+    - End of previous sprint Demo; New sprint start
+- Day 2 (Thu)
+    - Release doc review for previous sprint
+- Day 3 (Fri)
+    -  Release announcement for previous sprint sent<br>
+    -  List of youtube demos (or playlist) from last sprint publicly available<br>
+    -  List of test cases finalized
+- Day 5 (Tue) 
+- Day 6 (Wed)
+    - Development checkpoint
+- Day 7 (Thu)
+- Day 8 (Fri)
+- Day 9 (Mon)
+    - Pull requests submitted; all pull requests must have an assignee
+- Day 10 (Tue)
+- Day 11 (Wed)
+    - Sprint End Tags available for integration testing no later than 1800 EST
+    - release branch is considered frozen -- anything picked to the release branch should require QE support + release manager approval
+    - Start youtube demos
+- Day 12 (Thu)
+    - Backlog review, start creating new github issues for next sprint, identify high priority bugs to be fixed during next sprint and create github issues for those
+- Day 13 (Fri)
+    - finalized 'commit list' of bugs found within this sprint that should be addressed in the release branch.
+- Day 14 (Mon)
+    - Finalize Planning session agenda
+- Day 15 (Tue)
+    - All bugs from this sprint have been cherry picked to release branch, final release tag
+    - Assemble all youtube demos for Sprint End Meeting
+    - Next sprint planning meeting, planning Poker for next sprint
 
--   Week 3
 
-    -   Monday - QE Bug Scrub and prioritization
-    -   Tuesday - Issue grooming, remove milestone on any issues that missed Tag cutoff
-    -   Wednesday - All QE issues updated to reflect correct current state
-    -   Wednesday - All bugfixes backported to EOS release branch
-    -   Thursday - End of Sprint demo
-
-
--   Specific dates are on the [team
-    calendar](https://aeolusproject.org/TBD)
-
-It's critical to meet deliverables on these dates and not slip items. We
-go from planning of new features to minor releases every three weeks and this pace requires a
-significant amount of discipline. Also, it means we must keep a focus on
-*simplicity*. If something can't be coded, tested and handle any
-migrations within 2 weeks, we are probably taking on too much. Simple,
-small, and extremely fast - that is our development model.
+Specific dates are on the [team calendar](https://aeolusproject.org/TBD)
 
 # Required Git Repos
 
